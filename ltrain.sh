@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-python train.py --data_dir ./sample_data/train_data.txt --ngf 64 --ndf 2 --batch_size 4 --gan_mode vanilla --model pix2pix --name A2I_train --gpu_ids 0 --dataset_mode spectram --no_flip --verbose --norm batch
+python train.py --data_dir ./sample_data/train_data.txt --ngf 64 --ndf 2 --batch_size 4 --gan_mode vanilla --model pix2pix --name I2A_train --gpu_ids 0 --dataset_mode spectram --no_flip --verbose --norm batch --save_epoch_freq 10
