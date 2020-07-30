@@ -121,9 +121,17 @@ def prepare_all(audio, image, trainOrtesr):
 
 
 if __name__ == '__main__':
-    train_audio = '../sample_data/spectram/train/'
-    train_image = '../sample_data/img_256/train/'
+    train_audio = '../sample_data/Sub-URMP/LMS/'
+    train_image = '../sample_data/Sub-URMP/img/'
     prepare_all(train_audio, train_image, 'train')
-    test_audio = '../sample_data/spectram/test/'
-    test_image = '../sample_data/img_256/test/'
+    test_audio = '../sample_data/Sub-URMP/validation/LMS/'
+    test_image = '../sample_data/Sub-URMP/validation/img/'
     prepare_all(test_audio, test_image, 'test')
+
+# if __name__ == '__main__':
+#     train_audio = '../sample_data/spectram/train/'
+#     train_image = '../sample_data/img_256/train/'
+#     prepare_all(train_audio, train_image, 'train')
+#     test_audio = '../sample_data/spectram/test/'
+#     test_image = '../sample_data/img_256/test/'
+#     prepare_all(test_audio, test_image, 'test')
